@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 
 //import routes
-const userRouter = require('./Users/usersRouter.js');
+const userRouter = require('./users/usersRouter.js');
 const authRouter = require('./auth/auth-router');
 const ailmentRouter = require('./ailment/ailmentRouter');
 
