@@ -9,7 +9,7 @@ const authRouter = require('./auth/auth-router');
 const ailmentRouter = require('./ailment/ailmentRouter');
 
 const server = express();
-
+//test
 server
   .use(helmet())
   .use(express.json())
