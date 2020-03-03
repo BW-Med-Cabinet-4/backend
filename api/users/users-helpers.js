@@ -16,5 +16,5 @@ module.exports = {
     return {
       isSuccessful: errors.length > 0 ? false : true,
       errors
-    };
+    }; //test
   }
