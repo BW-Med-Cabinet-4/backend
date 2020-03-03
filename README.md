@@ -62,7 +62,6 @@ this requires a specific user be signed in with a completed ailment to return
 
 -Local Server: SQLite3
 
--Deployed Server: PostgreSQL
 ---
 >Getting Started
 Follow these steps to get setup on this server:
