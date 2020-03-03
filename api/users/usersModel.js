@@ -5,11 +5,12 @@ module.exports = {
   find,
   findBy,
   findById,
-  findUserAilment
+  findUserAilment,
+  
 };
 
 function find() {
-  return db('users').select('username', 'password');
+  return db('users').select('username', 'password', 'user_id');
 }
 
 function findBy(filter) {
@@ -20,7 +21,7 @@ function findBy(filter) {
 
 async function add(user) {
   
-   const [user_id] = await db('users').insert(user);
+   const [user_id] = await db('users').insert(user, 'user_id');
    return findById(user_id);
    
 }
@@ -31,6 +32,7 @@ function findById(user_id) {
     .where({ user_id })
     .first();
 }
+
 
 function findUserAilment(userId) {
   return db
