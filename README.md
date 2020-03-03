@@ -1,3 +1,5 @@
+DEPLOYED API HERE: https://medcabapi.herokuapp.com/
+
 This repository serves as the backend for Lambda School's MedCabinet Build Week Group of November 2019.
 ---
 >Documentation
