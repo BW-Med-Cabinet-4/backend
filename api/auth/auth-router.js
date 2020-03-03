@@ -1,11 +1,9 @@
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const router = require('express').Router();
-const Users = require('../users/usersModel');
-const { validateUser } = require("../users/users-helpers.js");
+const Users = require('../Users/usersModel');
+const { validateUser } = require("../Users/users-helpers");
 
-
-// REGISTER A USER- POST request to api/auth/register, must include username and password in body
 router.post('/register', (req, res) => {
   let user = req.body;
   const validateResult = validateUser(user);
@@ -31,7 +29,6 @@ router.post('/register', (req, res) => {
     }
 });
 
-//LOGIN -  POST request to api/auth/login - must have valid username and password in body
 router.post('/login', (req, res) => {
   let { username, password } = req.body;
 

@@ -15,13 +15,14 @@ router.get('/', restricted, (req, res) => {
   })
 });
 
-// add an ailment to a user... user  /api/ailment/ with user_id and ailment in the body
+
 router.post('/', restricted, (req, res) => {
   const body = req.body
   ailments.add(body)
   .then(newA => res.status(201).json(newA))
   .catch(err => res.send(err));
 })
+
 
 router.post('/user/:id', (req, res) => {
  

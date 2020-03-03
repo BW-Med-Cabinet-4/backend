@@ -4,10 +4,11 @@ const morgan = require("morgan");
 const cors = require("cors");
 
 //import routes
-const userRouter = require('./users/usersRouter.js');
+const strains = require('./strain-rt/strn--rrtr')
+const userRouter = require('./Users/usersRouter');
 const authRouter = require('./auth/auth-router');
 const ailmentRouter = require('./ailment/ailmentRouter');
-
+const recommends = require('./recommend_rtr/rec_rtr')
 const server = express();
 
 server
@@ -20,10 +21,10 @@ server
 server.get("/", (req, res) => {
   res.send("SERVER IS ON");
 });
-
+server.use('/api/ailments', ailmentRouter);
+server.use("/api/strains", strains);
 server.use('/api/auth', authRouter);
 server.use('/api/users', userRouter);
-server.use('/api/ailment', ailmentRouter);
-
+server.use('/api/recommends', recommends)
 
 module.exports = server;

@@ -38,3 +38,4 @@ function remove(ailment_id) {
     .where({ailment_id })
     .del();
 };
+
