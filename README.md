@@ -1,4 +1,6 @@
 DEPLOYED API HERE: https://medcabapi.herokuapp.com/
+DEPLOYED REACT APP HERE: https://jolly-goldstine-e6b2ea.netlify.com/
+note: the react team was unable to get an endpoint from DS, so it is receiving dummy data from this api. 
 
 This repository serves as the backend for Lambda School's MedCabinet 4 Build Week project
 >Documentation
