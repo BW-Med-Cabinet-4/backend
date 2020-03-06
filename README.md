@@ -31,7 +31,7 @@ users
 
 | POST  | /api/strains        | Will add a new strain it's body requires `strain_name`, `strain_type`, `effects`, and a `flavors`. It can also take in a `strain_desc` as a description of the strain.
 
-| PUT  |  /api/strains/id     | Will edit a specific strain. Requires same specs as POST in the body.
+| PUT  |  /api/strains/:id     | Will edit a specific strain. Requires same specs as POST in the body.
 
 | DELETE   | /api/strains/:id           | Will delete a specific strain
 
