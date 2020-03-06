@@ -1,6 +1,6 @@
 DEPLOYED API HERE: https://medcabapi.herokuapp.com/
 
-This repository serves as the backend for Lambda School's MedCabinet Build Week
+This repository serves as the backend for Lambda School's MedCabinet 4 Build Week project
 >Documentation
  ### Register and Login
  | POST   | /api/auth/register              | requres a `username` and a `password`
